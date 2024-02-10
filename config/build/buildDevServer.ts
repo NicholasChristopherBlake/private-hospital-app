@@ -1,7 +1,13 @@
 import type { Configuration as DevServerConfiguration } from 'webpack-dev-server';
+import { BuildOptions } from './types/types';
 
-export const buildDevServer = (): DevServerConfiguration => {
+export const buildDevServer = ({port}: BuildOptions): DevServerConfiguration => {
   return {
-    static: './build'
+    port: port,
+    hot: true,
+    historyApiFallback: true,
+    client: {
+      overlay: false
+    }
   }
 }

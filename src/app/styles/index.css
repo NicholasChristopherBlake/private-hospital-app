@@ -1,0 +1,11 @@
+@import './reset.css';
+@import './global/variables.css';
+@import './themes/light.css';
+@import './themes/dark.css';
+
+.app {
+  height: 400px;
+  border: 1px solid black;
+  color: blue;
+  background-color: var(--bg-color);
+}

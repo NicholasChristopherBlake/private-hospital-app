@@ -1,24 +1,25 @@
-import path from 'path';
-import HtmlWebpackPlugin from 'html-webpack-plugin';
-import { Configuration, ProgressPlugin } from 'webpack';
+import { Configuration } from 'webpack';
 import { buildPlugins } from './buildPlugins';
 import { buildResolvers } from './buildResolvers';
 import { buildDevServer } from './buildDevServer';
 import { buildLoaders } from './buildLoaders';
+import { BuildOptions } from './types/types';
 
 
-export const buildWebpackConfig = (): Configuration => {
+export const buildWebpackConfig = (options: BuildOptions): Configuration => {
+  const {isDev, paths} = options;
+
   return {
-    mode: 'production',
-    entry: './src/index.tsx',
+    mode: isDev ? 'development' : 'production',
+    entry: paths.entry,
     output: {
-      filename: 'main.js',
-      path: path.resolve(__dirname, 'build'),
+      filename: '[name].[contenthash].js',
+      path: paths.output,
       clean: true,
     },
-    devtool: 'inline-source-map',
-    devServer: buildDevServer(),
-    plugins: buildPlugins(),
+    devtool: isDev ? 'inline-source-map' : undefined,
+    devServer: buildDevServer(options),
+    plugins: buildPlugins(options),
     module: {
       rules: buildLoaders()
     },
