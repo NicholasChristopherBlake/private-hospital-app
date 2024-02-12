@@ -1,13 +1,16 @@
 @import './reset.css';
 @import './global/variables.css';
-@import './themes/light.css';
 @import './themes/dark.css';
+@import './themes/light.css';
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 
 .app {
-  background-color: var(--bg-color);
+  background-color: var(--bg-color-primary);
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  font-family: 'Lato', sans-serif;
+  color: var(--color-primary);
 }
 
 .page-wrapper {
@@ -24,5 +27,5 @@
 }
 
 .active {
-  color: red;
+  color: var(--color-accent);
 }

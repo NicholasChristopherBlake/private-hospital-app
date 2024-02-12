@@ -1,0 +1,49 @@
+.themeSwitcher {
+  position: relative;
+  width: 100px;
+}
+
+.label {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  background-color: var(--text-primary);
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.input {
+  position: absolute;
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+
+.input:checked ~ .slider {
+  background-color: var(--text-primary-inverted);
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  top: 6.5px;
+  left: 8px;
+  width: 37.5px;
+  height: 37.5px;
+  border-radius: 50%;
+  box-shadow: inset 14px -2px 0px 0px var(--text-primary-inverted);
+  background-color: var(--text-primary);
+  transition: 0.3s;
+}
+
+.input:checked ~ .slider::before {
+  transform: translateX(47.5px);
+  background-color: var(--text-primary);
+  box-shadow: none;
+}

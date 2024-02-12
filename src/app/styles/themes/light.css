@@ -1,0 +1,9 @@
+:root, .app.light {
+  --bg-color-primary: #F8F5FF;
+  --bg-color-primary-inverted: rgb(7,10,0);
+  --text-primary: #0C0029;
+  --text-primary-inverted: white;
+  --text-secondary: #6D6C75;
+  --color-accent: rgb(100, 28, 242);
+  --color-accent-inverted: rgb(155,227,13);
+}

@@ -11,7 +11,7 @@
 - Add absolute imports (done)
 - Fix CSS prod build (minimize css), fix modules filenames
 - Add React (done)
-- Add React Router DOM
+- Add React Router DOM (need to edit Root and Error files)
 - Add clsx (done)
 - Add Jest
 - Add Storybook

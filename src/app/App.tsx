@@ -1,13 +1,16 @@
-import { MainPage } from "pages/MainPage"
-import { Suspense } from "react"
-import { Outlet } from "react-router-dom"
-import { Navbar } from "widgets/Navbar"
-import { PageLoader } from "widgets/PageLoader/ui/PageLoader"
-import { Sidebar } from "widgets/Sidebar"
+import clsx from "clsx";
+import { MainPage } from "pages/MainPage";
+import { Suspense } from "react";
+import { Outlet } from "react-router-dom";
+import { useTheme } from "shared/lib/hooks/useTheme/useTheme";
+import { Navbar } from "widgets/Navbar";
+import { PageLoader } from "widgets/PageLoader/ui/PageLoader";
+import { Sidebar } from "widgets/Sidebar";
 
 export const RootLayout = () => {
+  const { theme } = useTheme();
   return (
-    <div className="app">
+    <div className={clsx("app", theme)}>
       <Navbar />
       <div className="page-wrapper">
         <Sidebar />
@@ -18,6 +21,5 @@ export const RootLayout = () => {
         </div>
       </div>
     </div>
-  )
-}
-
+  );
+};
