@@ -9,9 +9,17 @@
     "jsx": "react-jsx",
     "allowJs": true,
     "moduleResolution": "node",
+    "baseUrl": "./",
+    "paths": {
+      "*": [
+        "./src/*"
+      ],
+    },
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true
   },
+  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "exclude": ["./node_modules", "./build", "src/**/*.test.ts", "src/**/*.test.tsx"],
   "ts-node": {
     "compilerOptions": {
       "module": "CommonJS"

@@ -18,11 +18,17 @@ export const buildWebpackConfig = (options: BuildOptions): Configuration => {
       clean: true,
     },
     devtool: isDev ? 'inline-source-map' : undefined,
-    devServer: buildDevServer(options),
+    devServer: isDev ? buildDevServer(options) : undefined,
     plugins: buildPlugins(options),
     module: {
-      rules: buildLoaders()
+      rules: buildLoaders(options)
     },
-    resolve: buildResolvers(),
+    resolve: buildResolvers(options),
+    // optimization: {
+    //   minimizer: [
+    //     ...,
+    //     new Css
+    //   ]
+    // }
   };
 }

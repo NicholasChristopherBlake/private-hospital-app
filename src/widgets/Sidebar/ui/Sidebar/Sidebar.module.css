@@ -1,0 +1,4 @@
+.sidebar {
+  background-color: blanchedalmond;
+  width: var(--sidebar-width);
+}
