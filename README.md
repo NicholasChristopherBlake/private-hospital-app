@@ -3,6 +3,10 @@
 ## Tech Stack:
 
 - pnpm (testing)
+- React 18
+- React Router 6
+- Webpack 5 (Statoscope for bundle analysis)
+- Linters and styling: ESLint, Stylelint, Prettier
 
 ### Stage 1. Configuration
 
@@ -17,10 +21,10 @@
 - Add Jest (done)
 - Add React Testing Library
 - Add Storybook
-- Add ESLint, Prettier, Stylelint (add commands for prettier to package.json
-  Add onSave option, configure rules, add Stylelint)
+- Add ESLint, Prettier, Stylelint (add commands for prettier to package.json). Add onSave option, configure rules, add Stylelint. Fix ESLint rules problems
 - Add i18next
 
 ### Stage 2. Basic components, UI Kit
 
 - Add ThemeSwitcher (need to memoize, works for now)
+- Add language switcher
