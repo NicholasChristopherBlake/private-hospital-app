@@ -10,7 +10,7 @@ interface AppLinkProps extends NavLinkProps {
 }
 
 export const AppLink = (props: AppLinkProps) => {
-  const {children, ...otherProps} = props;
+  const { children, ...otherProps } = props;
 
   return (
     <NavLink className={clsx(cl.appLink)} {...otherProps}>

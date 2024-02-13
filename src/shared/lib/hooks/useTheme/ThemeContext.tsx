@@ -10,7 +10,7 @@ type ThemeContextType = {
 export const LOCAL_STORAGE_THEME_KEY = "theme_key";
 
 export const initialTheme: AppTheme = localStorage.getItem(
-  LOCAL_STORAGE_THEME_KEY
+  LOCAL_STORAGE_THEME_KEY,
 ) as AppTheme;
 
 const initialContext: ThemeContextType = {

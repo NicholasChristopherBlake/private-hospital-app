@@ -33,7 +33,7 @@
   width: 18.75px;
   height: 18.75px;
   border-radius: 50%;
-  box-shadow: inset 7px -1px 0px 0px var(--text-primary-inverted);
+  box-shadow: inset 7px -1px 0 0 var(--text-primary-inverted);
   background-color: var(--text-primary);
   transition: 0.3s;
 }

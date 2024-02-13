@@ -5,7 +5,7 @@ import { RouterProvider } from "react-router-dom";
 import { router } from "app/providers/routing/router";
 import { ThemeProvider } from "app/providers/ThemeProvider/ThemeProvider";
 
-document.body.innerHTML = "<div id=\"app\"></div>";
+document.body.innerHTML = '<div id="app"></div>';
 
 const root = createRoot(document.getElementById("app")!);
 root.render(
@@ -13,5 +13,5 @@ root.render(
     <ThemeProvider>
       <RouterProvider router={router} />
     </ThemeProvider>
-  </React.StrictMode>
+  </React.StrictMode>,
 );

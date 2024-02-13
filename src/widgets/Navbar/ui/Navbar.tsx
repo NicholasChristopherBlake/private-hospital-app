@@ -15,10 +15,9 @@ export const Navbar = (props: NavbarProps) => {
     <nav className={clsx(cl.navbar)}>
       <div className={cl.logo}>Logo</div>
       <div className={cl.links}>
-        <AppLink to='/'>Main</AppLink>
-        <AppLink to='about'>About</AppLink>
+        <AppLink to="/">Main</AppLink>
+        <AppLink to="about">About</AppLink>
       </div>
-      
     </nav>
   );
 };

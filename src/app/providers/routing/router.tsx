@@ -10,12 +10,11 @@ export const router = createBrowserRouter([
     element: <RootLayout />,
     errorElement: <NotFoundPage />,
     children: [
-      {index: true, element: <MainPage />},
+      { index: true, element: <MainPage /> },
       {
         path: "about",
         element: <AboutPage />,
       },
-    ]
+    ],
   },
- 
 ]);

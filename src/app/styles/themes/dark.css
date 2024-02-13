@@ -1,9 +1,10 @@
-:root, .app.dark {
-  --bg-color-primary: rgb(7,10,0);
-  --bg-color-primary-inverted: #F8F5FF;
+:root,
+.app.dark {
+  --bg-color-primary: rgb(7 10 0);
+  --bg-color-primary-inverted: #f8f5ff;
   --text-primary: white;
-  --text-primary-inverted: #0C0029;
+  --text-primary-inverted: #0c0029;
   --text-secondary: #d9d7e3;
-  --color-accent: rgb(155,227,13);
-  --color-accent-inverted: rgb(100, 28, 242);
+  --color-accent: rgb(155 227 13);
+  --color-accent-inverted: rgb(100 28 242);
 }
