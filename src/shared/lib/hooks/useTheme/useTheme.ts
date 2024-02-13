@@ -1,12 +1,8 @@
-import { useContext, useState } from "react";
-import { AppTheme, ThemeContext } from "./ThemeContext";
+import { useContext } from "react";
+import { ThemeContext } from "./ThemeContext";
 
 export const useTheme = () => {
-  const [theme, setTheme] = useState<AppTheme>("light");
-
-  const toggleTheme = () => {
-    setTheme(theme === "light" ? "dark" : "light");
-  };
+  const { theme, toggleTheme } = useContext(ThemeContext);
 
   return { theme, toggleTheme };
 };

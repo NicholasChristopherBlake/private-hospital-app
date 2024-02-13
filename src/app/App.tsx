@@ -1,6 +1,5 @@
 import clsx from "clsx";
-import { MainPage } from "pages/MainPage";
-import { Suspense } from "react";
+import { Suspense, useContext } from "react";
 import { Outlet } from "react-router-dom";
 import { useTheme } from "shared/lib/hooks/useTheme/useTheme";
 import { Navbar } from "widgets/Navbar";
@@ -9,6 +8,7 @@ import { Sidebar } from "widgets/Sidebar";
 
 export const RootLayout = () => {
   const { theme } = useTheme();
+
   return (
     <div className={clsx("app", theme)}>
       <Navbar />

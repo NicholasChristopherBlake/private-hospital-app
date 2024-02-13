@@ -1,7 +1,7 @@
-import clsx from 'clsx'
-import cl from './NotFoundPage.module.css'
-import { ReactNode } from 'react';
-import { useRouteError } from 'react-router-dom';
+import clsx from "clsx";
+import cl from "./NotFoundPage.module.css";
+import { ReactNode } from "react";
+import { useRouteError } from "react-router-dom";
 
 interface NotFoundPageProps {
   className?: string;
@@ -21,5 +21,5 @@ export const NotFoundPage = (props: NotFoundPageProps) => {
         {/* <i>{error.statusText || error.message}</i> */}
       </p>
     </div>
-  )
-}
+  );
+};

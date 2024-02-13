@@ -1,14 +1,14 @@
-import { Button } from 'shared/ui/Button/Button';
-import cls from './MainPage.module.css';
-import clsx from 'clsx';
+import { Button } from "shared/ui/Button/Button";
+import cls from "./MainPage.module.css";
+import clsx from "clsx";
 
 const MainPage = () => {
   return (
     <div className={clsx(cls.mainPage)}>
       <p>MainPage</p>
       <Button>some</Button>
-      </div>
-  )
-}
+    </div>
+  );
+};
 
-export default MainPage
+export default MainPage;

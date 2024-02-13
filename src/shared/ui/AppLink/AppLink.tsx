@@ -1,6 +1,6 @@
-import clsx from 'clsx'
-import cl from './AppLink.module.css'
-import { ReactNode } from 'react';
+import clsx from "clsx";
+import cl from "./AppLink.module.css";
+import { ReactNode } from "react";
 import { NavLink, NavLinkProps } from "react-router-dom";
 
 interface AppLinkProps extends NavLinkProps {
@@ -16,5 +16,5 @@ export const AppLink = (props: AppLinkProps) => {
     <NavLink className={clsx(cl.appLink)} {...otherProps}>
       {children}
     </NavLink>
-  )
-}
+  );
+};

@@ -1,10 +1,11 @@
 # Development stages
 
 ## Tech Stack:
+
 - pnpm (testing)
 
-
 ### Stage 1. Configuration
+
 - Add Webpack (done)
 - Add Typescript (done)
 - Add CSS modules (done)
@@ -13,6 +14,13 @@
 - Add React (done)
 - Add React Router DOM (need to edit Root and Error files)
 - Add clsx (done)
-- Add Jest
+- Add Jest (done)
+- Add React Testing Library
 - Add Storybook
+- Add ESLint, Prettier, Stylelint (add commands for prettier to package.json
+  Add onSave option, configure rules, add Stylelint)
+- Add i18next
 
+### Stage 2. Basic components, UI Kit
+
+- Add ThemeSwitcher (need to memoize, works for now)

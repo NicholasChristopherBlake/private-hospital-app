@@ -1,7 +1,7 @@
-import clsx from 'clsx'
-import cl from './Navbar.module.css'
-import { ReactNode } from 'react';
-import { AppLink } from 'shared/ui/AppLink/AppLink';
+import clsx from "clsx";
+import cl from "./Navbar.module.css";
+import { ReactNode } from "react";
+import { AppLink } from "shared/ui/AppLink/AppLink";
 
 interface NavbarProps {
   className?: string;
@@ -20,5 +20,5 @@ export const Navbar = (props: NavbarProps) => {
       </div>
       
     </nav>
-  )
-}
+  );
+};

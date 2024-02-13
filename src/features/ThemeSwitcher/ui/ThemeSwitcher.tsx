@@ -9,13 +9,18 @@ interface ThemeSwitcherProps {
 }
 
 export const ThemeSwitcher = (props: ThemeSwitcherProps) => {
-  const {} = props;
-  const { toggleTheme } = useTheme();
+  const { theme, toggleTheme } = useTheme();
+  const checked = theme === "dark";
 
   return (
     <div className={clsx(cl.themeSwitcher)}>
       <label className={cl.label}>
-        <input className={cl.input} type="checkbox" onChange={toggleTheme} />
+        <input
+          className={cl.input}
+          type="checkbox"
+          onChange={toggleTheme}
+          checked={checked}
+        />
         <span className={cl.slider} />
       </label>
     </div>
