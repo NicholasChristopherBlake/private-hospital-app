@@ -9,10 +9,10 @@ interface SidebarProps {
 }
 
 export const Sidebar = (props: SidebarProps) => {
-  const {} = props;
+  // const {} = props;
 
   return (
-    <div className={clsx(cl.sidebar)}>
+    <div data-testid="sidebar" className={clsx(cl.sidebar)}>
       Sidebar
       <div className={cl.switchers}>
         <ThemeSwitcher />

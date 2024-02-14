@@ -10,5 +10,18 @@ export const buildLoaders = (options: BuildOptions): RuleSetRule[] => {
   };
   const cssLoader = buildCssLoader(options);
 
-  return [tsLoader, cssLoader]
+  const babelLoader = {
+    test: /\.(?:js|mjs|cjs)$/,
+    exclude: /node_modules/,
+    use: {
+      loader: 'babel-loader',
+      options: {
+        presets: [
+          ['@babel/preset-env', { targets: "defaults" }]
+        ]
+      }
+    }
+  }
+
+  return [tsLoader, babelLoader, cssLoader]
 }

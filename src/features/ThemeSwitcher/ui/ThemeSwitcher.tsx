@@ -13,7 +13,7 @@ export const ThemeSwitcher = (props: ThemeSwitcherProps) => {
   const checked = theme === "dark";
 
   return (
-    <div className={clsx(cl.themeSwitcher)}>
+    <div className={clsx(cl.themeSwitcher)} data-testid="theme-switcher">
       <label className={cl.label}>
         <input
           className={cl.input}

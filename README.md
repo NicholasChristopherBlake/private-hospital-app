@@ -19,7 +19,9 @@
 - Add React Router DOM (need to edit Root and Error files)
 - Add clsx (done)
 - Add Jest (done)
-- Add React Testing Library
+- Add React Testing Library (done)
+- Add babel loader and babel (mostly, for jest) (done)
+- Add renderTestComponent()
 - Add Storybook
 - Add ESLint, Prettier, Stylelint (add commands for prettier to package.json). Add onSave option, configure rules, add Stylelint. Fix ESLint rules problems
 - Add i18next

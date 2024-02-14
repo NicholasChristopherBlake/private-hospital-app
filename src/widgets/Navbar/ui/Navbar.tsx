@@ -9,7 +9,7 @@ interface NavbarProps {
 }
 
 export const Navbar = (props: NavbarProps) => {
-  const {} = props;
+  // const {} = props;
 
   return (
     <nav className={clsx(cl.navbar)}>
