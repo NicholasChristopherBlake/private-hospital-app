@@ -10,13 +10,11 @@
     "analyze:dev": "webpack --env mode=development --env analyze=true",
     "start": "webpack serve --env port=3000",
     "test:unit": "jest --config ./config/jest/jest.config.ts",
-    "lint:ts": "eslint src/** --ext .ts --ext .tsx",
-    "lint:ts:fix": "eslint src/** --ext .ts --ext .tsx --fix",
+    "lint:ts": "eslint --ext .ts --ext .tsx src/",
+    "lint:ts:fix": "eslint --ext .ts --ext .tsx src/ --fix",
     "prettier": "prettier --write src/",
-    "lint:css": "stylelint **/*.css",
-    "lint:css:fix": "stylelint **/*.css --fix",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "lint:css": "stylelint src/**/*.css",
+    "lint:css:fix": "stylelint src/**/*.css --fix"
   },
   "keywords": [],
   "author": "",

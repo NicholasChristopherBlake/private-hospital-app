@@ -9,7 +9,7 @@ interface NotFoundPageProps {
 }
 
 export const NotFoundPage = (props: NotFoundPageProps) => {
-  const {} = props;
+  // const {} = props;
   const error: ReturnType<typeof useRouteError> = useRouteError();
   console.error(error);
 
