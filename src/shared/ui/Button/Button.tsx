@@ -5,13 +5,14 @@ import cl from "./Button.module.css";
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   className?: string;
+  size?: "small" | "medium" | "large";
 }
 
 export const Button = (props: ButtonProps) => {
-  const { children } = props;
+  const { children, type = "button", ...otherProps } = props;
   // const { t } = useTranslation();
   return (
-    <button className={clsx(cl.button, { pressed: true }, ["new"])}>
+    <button className={clsx(cl.button, {}, [])} type={type} {...otherProps}>
       {children}
     </button>
   );

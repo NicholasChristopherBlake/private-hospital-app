@@ -2,6 +2,7 @@ import clsx from "clsx";
 import cl from "./Sidebar.module.css";
 import { ReactNode } from "react";
 import { ThemeSwitcher } from "features/ThemeSwitcher";
+import { LangSwitcher } from "features/LangSwitcher";
 
 interface SidebarProps {
   className?: string;
@@ -16,6 +17,7 @@ export const Sidebar = (props: SidebarProps) => {
       Sidebar
       <div className={cl.switchers}>
         <ThemeSwitcher />
+        <LangSwitcher />
       </div>
     </div>
   );

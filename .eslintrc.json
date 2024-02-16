@@ -24,5 +24,8 @@
   "plugins": ["@typescript-eslint", "react"],
   "rules": {
     "@typescript-eslint/no-unused-vars": "warn"
+  },
+  "globals": {
+    // "__IS_DEV__": true
   }
 }

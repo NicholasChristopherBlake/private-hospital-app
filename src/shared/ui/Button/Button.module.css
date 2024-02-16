@@ -5,4 +5,5 @@
   border-radius: 20px;
   color: var(--text-primary-inverted);
   text-align: center;
+  cursor: pointer;
 }

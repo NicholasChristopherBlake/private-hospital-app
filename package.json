@@ -14,7 +14,9 @@
     "lint:ts:fix": "eslint --ext .ts --ext .tsx src/ --fix",
     "prettier": "prettier --write src/",
     "lint:css": "stylelint src/**/*.css",
-    "lint:css:fix": "stylelint src/**/*.css --fix"
+    "lint:css:fix": "stylelint src/**/*.css --fix",
+    "storybook": "storybook dev -p 6006 -c ./config/storybook",
+    "build-storybook": "storybook build -c ./config/storybook"
   },
   "keywords": [],
   "author": "",
@@ -25,6 +27,14 @@
     "@babel/preset-react": "^7.23.3",
     "@babel/preset-typescript": "^7.23.3",
     "@statoscope/webpack-plugin": "^5.28.2",
+    "@storybook/addon-essentials": "^7.6.16",
+    "@storybook/addon-interactions": "^7.6.16",
+    "@storybook/addon-links": "^7.6.16",
+    "@storybook/addon-onboarding": "1.0.11",
+    "@storybook/blocks": "^7.6.16",
+    "@storybook/react": "^7.6.16",
+    "@storybook/react-webpack5": "^7.6.16",
+    "@storybook/test": "^7.6.16",
     "@testing-library/jest-dom": "^6.4.2",
     "@testing-library/react": "^14.2.1",
     "@testing-library/user-event": "^14.5.2",
@@ -48,6 +58,7 @@
     "jest-environment-jsdom": "^29.7.0",
     "mini-css-extract-plugin": "^2.8.0",
     "prettier": "3.2.5",
+    "storybook": "^7.6.16",
     "style-loader": "^3.3.4",
     "stylelint": "^16.2.1",
     "stylelint-config-standard": "^36.0.0",
@@ -59,8 +70,12 @@
     "webpack-dev-server": "^4.15.1"
   },
   "dependencies": {
+    "i18next": "^23.8.2",
+    "i18next-browser-languagedetector": "^7.2.0",
+    "i18next-http-backend": "^2.4.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-i18next": "^14.0.5",
     "react-router-dom": "^6.22.0"
   }
 }

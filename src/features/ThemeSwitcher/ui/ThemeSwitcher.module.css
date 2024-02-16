@@ -1,6 +1,7 @@
 .themeSwitcher {
   position: relative;
   width: 50px;
+  padding-bottom: 30px;
 }
 
 .label {

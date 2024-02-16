@@ -9,7 +9,9 @@ const config: Config = {
   // cacheDirectory: "C:\\Users\\User\\AppData\\Local\\Temp\\jest",
   // Automatically clear mock calls, instances, contexts and results before every test
   clearMocks: true,
-  globals: {},
+  globals: {
+    __IS_DEV__: true,
+  },
   testEnvironment: "jsdom",
   // The glob patterns Jest uses to detect test files
   testMatch: ["**/__tests__/**/*.[jt]s?(x)", "**/?(*.)+(spec|test).[tj]s?(x)"],

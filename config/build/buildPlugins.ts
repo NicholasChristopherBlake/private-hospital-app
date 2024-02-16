@@ -1,5 +1,5 @@
 import HtmlWebpackPlugin from "html-webpack-plugin"
-import { ProgressPlugin, WebpackPluginInstance } from "webpack"
+import { DefinePlugin, ProgressPlugin, WebpackPluginInstance } from "webpack"
 import MiniCssExtractPlugin from 'mini-css-extract-plugin'
 import StatoscopeWebpackPlugin from '@statoscope/webpack-plugin';
 import { BuildOptions } from "./types/types"
@@ -15,10 +15,13 @@ export const buildPlugins = ({paths, isDev, analyze}: BuildOptions): WebpackPlug
     new MiniCssExtractPlugin({
       filename: "[name].[contenthash].css",
       chunkFilename: "[id].[contenthash].css"
+    }),
+    new DefinePlugin({
+      __IS_DEV__: isDev
     })
   ];
 
-  if(isDev) {}
+  // if(isDev) {}
   
   if(analyze) {
     plugins.push(new StatoscopeWebpackPlugin())

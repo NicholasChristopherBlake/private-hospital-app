@@ -8,7 +8,7 @@ export const buildLoaders = (options: BuildOptions): RuleSetRule[] => {
     use: 'ts-loader',
     exclude: /node_modules/,
   };
-  const cssLoader = buildCssLoader(options);
+  const cssLoader = buildCssLoader(options.isDev);
 
   const babelLoader = {
     test: /\.(?:js|mjs|cjs)$/,
