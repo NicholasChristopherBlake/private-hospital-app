@@ -1,9 +1,21 @@
 .button {
-  border: none;
-  background: var(--color-accent);
   padding: 8px 16px;
   border-radius: 20px;
-  color: var(--text-primary-inverted);
+  color: var(--text-primary);
   text-align: center;
   cursor: pointer;
+  background-color: transparent;
+}
+
+.accent {
+  border: none;
+  background-color: var(--color-accent);
+}
+
+.outlined {
+  border: 1px solid var(--color-accent);
+}
+
+.clear {
+  border: none;
 }

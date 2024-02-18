@@ -9,7 +9,7 @@ const MainPage = () => {
   return (
     <div className={clsx(cl.mainPage)}>
       <p>{t("Main Page")}</p>
-      <Button>some</Button>
+      <Button variant="accent">some</Button>
     </div>
   );
 };

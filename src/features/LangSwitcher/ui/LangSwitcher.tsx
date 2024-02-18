@@ -17,7 +17,11 @@ export const LangSwitcher = (props: LangSwitcherProps) => {
   };
 
   return (
-    <Button data-testid="lang-switcher" onClick={changeLanguage}>
+    <Button
+      variant="outlined"
+      data-testid="lang-switcher"
+      onClick={changeLanguage}
+    >
       {t("Change Language")}
     </Button>
   );

@@ -13,6 +13,7 @@ const meta = {
   },
   args: {
     children: "Text",
+    variant: "accent",
   },
   // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs
   tags: ["autodocs"],
@@ -26,4 +27,9 @@ type Story = StoryObj<typeof meta>;
 export const Primary: Story = {};
 export const PrimaryDark: Story = {
   decorators: ThemeDecorator("dark"),
+};
+export const Outlined: Story = {
+  args: {
+    variant: "outlined",
+  },
 };

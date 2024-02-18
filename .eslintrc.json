@@ -13,6 +13,7 @@
     "plugin:@typescript-eslint/recommended",
     "plugin:react/recommended",
     "plugin:react/jsx-runtime",
+    "plugin:i18next/recommended",
     // Last
     "prettier"
   ],
@@ -21,9 +22,10 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["@typescript-eslint", "react"],
+  "plugins": ["@typescript-eslint", "react", "i18next"],
   "rules": {
-    "@typescript-eslint/no-unused-vars": "warn"
+    "@typescript-eslint/no-unused-vars": "warn",
+    "i18next/no-literal-string": "warn"
   },
   "globals": {
     // "__IS_DEV__": true

@@ -22,11 +22,14 @@
 - Add React Testing Library (done)
 - Add babel loader and babel (mostly, for jest) (done)
 - Add renderTestComponent()
-- Add Storybook
+- Add Storybook and decorators
 - Add ESLint, Prettier, Stylelint (add commands for prettier to package.json). Add onSave option, configure rules, add Stylelint. Fix ESLint rules problems
 - Add i18next
 
 ### Stage 2. Basic components, UI Kit
 
 - Add ThemeSwitcher (need to memoize, works for now)
-- Add language switcher
+- Add LangSwitcher
+- Add all basic UI components
+- Add stories to all components
+- Add tests to widgets and features
