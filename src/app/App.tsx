@@ -7,7 +7,6 @@ import { PageLoader } from "widgets/PageLoader/ui/PageLoader";
 import { Sidebar } from "widgets/Sidebar";
 
 export const RootLayout = () => {
-  const {} = props;
   const { theme } = useTheme();
 
   return (
