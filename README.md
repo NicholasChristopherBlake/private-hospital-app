@@ -6,9 +6,11 @@
 - React 18
 - React Router 6
 - Webpack 5 (Statoscope for bundle analysis)
+- State: Redux Toolkit
 - Linters and styling: ESLint, Stylelint, Prettier
 - UI Library: Storybook
 - Testing: Jest, React Testing Library, Storybook + Chromatic
+- Fetching: axios, RTK Query
 
 ### Stage 1. Configuration
 
@@ -30,9 +32,11 @@
 - Add Chromatic for screenshot testing (done)
 - Create CI pipeline with Github Actions (done)
 - Add Husky pre-commit (done)
-- Add JSON Server and auth
+- Add JSON Server and auth (done)
 - Add RTK
+- Add axios
 - Hide Chromatic key from package.json somewhere
+- Add SvgLoader and FileLoader (done, need to also fix errors in storybook and testing)
 
 ### Stage 2. Basic components, UI Kit
 

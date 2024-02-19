@@ -7,4 +7,7 @@
   --text-secondary: #6d6c75;
   --color-accent: rgb(100 28 242);
   --color-accent-inverted: rgb(155 227 13);
+
+  /* Overlays */
+  --overlay-color-60: rgb(0 0 0 / 60%);
 }
