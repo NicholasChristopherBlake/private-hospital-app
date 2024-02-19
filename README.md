@@ -29,7 +29,7 @@
 - Add i18next (done)
 - Add Chromatic for screenshot testing (done)
 - Create CI pipeline with Github Actions (done)
-- Add Husky pre-commit
+- Add Husky pre-commit (done)
 - Add JSON Server and auth
 - Add RTK
 - Hide Chromatic key from package.json somewhere
