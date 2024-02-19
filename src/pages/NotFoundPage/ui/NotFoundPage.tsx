@@ -7,6 +7,7 @@ import {
   useRouteError,
 } from "react-router-dom";
 import { Button } from "shared/ui/Button/Button";
+import { PageError } from "widgets/PageError";
 
 interface NotFoundPageProps {
   className?: string;
@@ -36,6 +37,10 @@ export const NotFoundPage = (props: NotFoundPageProps) => {
       </div>
     );
   } else {
-    return <div>Oops, unknown error occured</div>;
+    return (
+      <div className={clsx(cl.notFoundPage)}>
+        <PageError />
+      </div>
+    );
   }
 };
