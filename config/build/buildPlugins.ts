@@ -19,7 +19,7 @@ export const buildPlugins = ({paths, isDev, analyze}: BuildOptions): WebpackPlug
     new DefinePlugin({
       __IS_DEV__: isDev
     })
-  ];
+  ]
 
   // if(isDev) {}
   
