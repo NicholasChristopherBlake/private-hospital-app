@@ -1,8 +1,8 @@
 import { RootLayout } from "app/App";
 import { AboutPage } from "pages/AboutPage";
 import { MainPage } from "pages/MainPage";
-import { NotFoundPage } from "pages/NotFoundPage/ui/NotFoundPage";
-import { RouteObject, createBrowserRouter } from "react-router-dom";
+import { NotFoundPage } from "pages/NotFoundPage";
+import { createBrowserRouter } from "react-router-dom";
 
 export const router = createBrowserRouter([
   {
