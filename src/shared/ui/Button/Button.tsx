@@ -13,6 +13,7 @@ type ButtonVariants = "accent" | "outlined" | "clear";
 
 export const Button = (props: ButtonProps) => {
   const {
+    className,
     children,
     type = "button",
     variant = "accent",
@@ -21,7 +22,7 @@ export const Button = (props: ButtonProps) => {
   // const { t } = useTranslation();
   return (
     <button
-      className={clsx(cl.button, {}, [cl[variant]])}
+      className={clsx(cl.button, [cl[variant]], className)}
       type={type}
       {...otherProps}
     >

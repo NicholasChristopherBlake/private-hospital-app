@@ -1,3 +1,19 @@
 .sidebar {
   width: var(--sidebar-width);
+  position: relative;
+  transition: width 0.3s ease-in;
+  border-right: 2px solid var(--color-accent);
+}
+
+.switchers {
+  padding-top: 40px;
+}
+
+.collapsed {
+  width: var(--sidebar-width-collapsed);
+}
+
+.collapseBtn {
+  position: absolute;
+  right: 0;
 }
