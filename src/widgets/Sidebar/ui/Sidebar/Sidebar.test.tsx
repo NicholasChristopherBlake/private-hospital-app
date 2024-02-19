@@ -6,7 +6,6 @@ import { renderWithTranslation } from "shared/lib/testing/renderWithTranslation"
 describe("Sidebar.test", () => {
   test("Sidebar test", async () => {
     renderWithTranslation(<Sidebar />);
-    screen.debug();
     expect(screen.getByTestId("sidebar")).toBeInTheDocument();
     await userEvent.click(screen.getByTestId("theme-switcher"));
     expect(screen.getByTestId("sidebar")).toBeInTheDocument();
