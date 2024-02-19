@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import { Suspense, useContext } from "react";
+import { Suspense } from "react";
 import { Outlet } from "react-router-dom";
 import { useTheme } from "shared/lib/hooks/useTheme/useTheme";
 import { Navbar } from "widgets/Navbar";
@@ -7,9 +7,8 @@ import { PageLoader } from "widgets/PageLoader/ui/PageLoader";
 import { Sidebar } from "widgets/Sidebar";
 
 export const RootLayout = () => {
+  const {} = props;
   const { theme } = useTheme();
-  const newVar: Array<number> = [];
-  newVar.push("something");
 
   return (
     <div className={clsx("app", theme)}>
