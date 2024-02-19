@@ -8,7 +8,8 @@ import { Sidebar } from "widgets/Sidebar";
 
 export const RootLayout = () => {
   const { theme } = useTheme();
-  const newVar = [];
+  const newVar: Array<number> = [];
+  newVar.push("something");
 
   return (
     <div className={clsx("app", theme)}>
