@@ -21,7 +21,7 @@ export const Button = (props: ButtonProps) => {
   // const { t } = useTranslation();
   return (
     <button
-      className={clsx(cl.button, {}, [variant])}
+      className={clsx(cl.button, {}, [cl[variant]])}
       type={type}
       {...otherProps}
     >

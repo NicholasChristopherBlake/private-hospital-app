@@ -10,12 +10,15 @@
 .accent {
   border: none;
   background-color: var(--color-accent);
+  color: var(--text-primary-inverted);
 }
 
 .outlined {
-  border: 1px solid var(--color-accent);
+  border: 2px solid var(--color-accent);
 }
 
 .clear {
   border: none;
+  padding: 0;
+  border-radius: 0;
 }
