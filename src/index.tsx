@@ -3,8 +3,8 @@ import "./app/styles/index.css";
 import React from "react";
 import { RouterProvider } from "react-router-dom";
 import { router } from "app/providers/routing/router";
-import { ThemeProvider } from "app/providers/ThemeProvider/ThemeProvider";
 import i18next from "shared/config/i18next/i18next";
+import { ThemeProvider } from "app/providers/ThemeProvider";
 
 document.body.innerHTML = '<div id="app"></div>';
 

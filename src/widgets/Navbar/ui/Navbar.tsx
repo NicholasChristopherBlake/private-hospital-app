@@ -4,11 +4,11 @@ import { ReactNode, useState } from "react";
 import { AppLink } from "shared/ui/AppLink/AppLink";
 import MainLogo from "shared/assets/main-20-20.svg";
 import AboutLogo from "shared/assets/about-20-20.svg";
-import { RoutePaths } from "shared/config/routing/RoutePaths";
 import { Button } from "shared/ui/Button/Button";
 import { Modal } from "shared/ui/Modal/Modal";
 import { Input } from "shared/ui/Input/Input";
 import { Portal } from "shared/ui/Portal/Portal";
+import { RoutePaths } from "shared/config/routing/routeConfig";
 
 interface NavbarProps {
   className?: string;
